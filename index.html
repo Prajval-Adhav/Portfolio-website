@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class = "logo"> Prajval Adhav</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class = "logo"> Prajval Adhav</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-list">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Prajval profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Prajval Adhav</h1>
+            <p class="section__text__p2">Tech Enthusiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Prajval_Adhav_Resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#Contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my LinkedIn Profile" class="icon" onclick="location.href=`https://www.linkedin.com/in/prajval-adhav`">
+                <img src="./assets/github.png" alt="my github Profile" class="icon" onclick="location.href=`https://github.com/Prajval-Adhav`">
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <p class="section__text__p1"> Get to know more</p>
+        <h1 class="title"> About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Tech Stack</h3>
+                        <img src="./assets/mongo.jpg" alt="mongo icon" class="icon2">
+                        <img src="./assets/express.png" alt="express icon" class="icon2">
+                        <img src="./assets/react.png" alt="react icon" class="icon2">
+                        <img src="./assets/node.jpg" alt="node icon" class="icon2" ><br>
+                        <img src="./assets/html.png" alt="html icon" class="icon2">
+                        <img src="./assets/css.png" alt="css icon" class="icon2">
+                        <img src="./assets/javascript.png" alt="javascript icon" class="icon2"><br>
+                        <img src="./assets/python.jpg" alt="python icon" class="icon2">
+                        <img src="./assets/c.png" alt="c icon" class="icon2">
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education </h3>
+                        <p> <br> B-Tech in Computer Engineering <br> at Savitribai Phule Pune University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Passionate full-stack developer with a degree in Computer Engineering. 
+                        Adept at crafting seamless, user-centric web solutions. 
+                        Committed to staying on the cutting edge by embracing and mastering new technologies. 
+                        Eager to tackle complex challenges and contribute to innovative projects. 
+                        Let's build the future together through code and creativity</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
+        onclick="location.href='./#Experience'">
+    </section>
+        <script src="script.js"></script>
+</body>
+</html>
